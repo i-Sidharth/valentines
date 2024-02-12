@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.container {
+  position: relative;
+  width: 400px; /* Adjust container width as needed */
+  height: 300px; /* Adjust container height as needed */
+  background-color: #b7344c;
+  overflow: hidden;
+  border: 10px solid rgb(22, 19, 19);
+  border-radius: 10px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .4);
+}
+
+.cat {
+  position: absolute;
+  top: 50%;
+  width: 100px; /* Adjust cat width as needed */
+  height: auto;
+  animation: upTwo 5s linear infinite alternate;
+}
+
+.left-cat {
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.right-cat {
+  right: 10%;
+  transform: translate(50%, -50%);
+}
+
+@keyframes upTwo {
+  0% { top: 50%; }
+  80% { top: 10%; }
+  100% { top: 10%; } /* Keep the cat at the top indefinitely */
+}
+
+}
+
+
+  </style>
+</head>
+<body>
+<div class="happy-valentines">
+  <div class="container">
+    <img src="cat.png" alt="Cat" class="cat left-cat">
+    <img src="cat.png" alt="Cat" class="cat right-cat">
+    <div class="clouds"></div>
+    <div class="hearts">
+      <div class="heartOne">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+      </div>
+      <div class="heartTwo">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+      </div>
+      <div class="heartThree">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+      </div>
+      <div class="heartFour">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+      </div>
+      <div class="heartFive">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+      </div>
+    </div>
+    <div class="text"><span>Happy Valentine's Day</br> Mole!</div>
+  </div>
+  <p class="hover">-bring your cursor over the text -</p>
+</div>
+</body>
+</html>
